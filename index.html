@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Comercial</title>
 </head>
+
 <body>
-    
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <h1><a href="index.html">LA COMERCIAL</a></h1>
+                </td>
+                <td>
+                    <form action="login.html">
+                        <table>
+                            <tr>
+                                <td>Usuario</td>
+                                <td>Contraseña</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="usuario" id="usuario"></td>
+                                <td><input type="text" name="pass" id="pass"></td>
+                                <td><input type="submit" value="Iniciar Sesión" name="enviar"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <section>
+        <h2>Artículos de importación</h2>
+        <ul>
+            <li>Urquiza 2153</li>
+            <li>2200 - San Lorenzo - Santa Fe</li>
+            <li>Responsable Inscripto</li>
+            <li>CUIT: 30-56032503-3</li>
+            <li>I. Brutos: CM 921-750546</li>
+        </ul>
+    </section>
+    <section>
+        <form action="registrar.html">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="user">Usuario</label>
+                        <input type="text" name="user" id="user" placeholder="Usuario">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" placeholder="Contraseña">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Registrarse</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
 </body>
+
 </html>
