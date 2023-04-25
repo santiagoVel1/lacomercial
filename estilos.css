@@ -30,8 +30,6 @@ header a {
 }
 
 .recuadro {
-    display: flex;
-    width: 400px;
     height: 300px;
     margin: 10px;
     padding: 20px;
@@ -39,7 +37,9 @@ header a {
     border-radius: 10px;
     box-shadow: 10px 10px 10px #ccc;
 }
-
+.azul-claro {
+    background-color: #d3e7ea;
+}
 .azul-oscuro {
     background-color: #88a0d7;
     color: #fff;
