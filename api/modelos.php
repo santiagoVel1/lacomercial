@@ -85,5 +85,40 @@ class ModeloABM extends Modelo {
     return $datos_json;
   }
 
+  public funtion insertar($valores){
+    $campos = "";
+    $datos = ""
+
+    foreach($valores as $key=>$value){
+      $value = "'".$value."'"
+      $campos .= $key.", ";
+      $datos .= $value. ", ";
+    }
+    $campos= substr($campos,0,strlen(campos)-1);
+    $datos = substr($datos,0,strlen($datos)-1)
+
+    $sql = "INSERT INTO $this->tabla($campos)VALUES($datos)";
+    echo $sql; 
+    $this->_db->query($sql);
+  }
+
+  /**
+   * @param valores
+   */
+  public function actualizar($valores){
+    $sql = "UPDATE $this ->tabla SET";
+    foreach($valores as $key  => $value){
+    $sql .= $key "='".$value."',";
+    }
+    $sql = substr($sql,0,strlen($sql)-1);
+    $sql .= "WHERE $this->criterio";
+    echo $sql;
+    $this->_db->query($sql);
+  }
+
+  public function  eliminar() {
+    $sql  = "DELETE FROM $this->tabla WHERE $this->criterio";
+    $this->_db->query($sql);
+  }
 }
 ?>
